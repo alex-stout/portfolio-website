@@ -2,10 +2,14 @@
   <Module id="projects" title="Projects">
     <v-layout wrap>
       <v-flex xs6 md4 lg3 xl2 v-for="project in projects" :key="project.name">
-        <v-card color="amber lighten-4" class="text-xs-center ma-3">
+        <v-card color="amber lighten-5" class="text-xs-center ma-3">
           <v-responsive>
             <a :href="project.url">
-              <v-img :src="require('@/assets/projects/'+project.logo)" aspect-ratio="1"></v-img>
+              <v-img
+                :src="require('@/assets/projects/'+project.logo)"
+                aspect-ratio="1"
+                :alt="project.alt"
+              ></v-img>
             </a>
           </v-responsive>
 
@@ -41,15 +45,17 @@ export default {
       projects: [
         {
           name: "Bytepocket",
-          logo: "bytepocket1.jpg",
+          logo: "bytepocket.jpg",
           url: "https://taylor-misch.github.io/bytepocket/",
-          github: "https://github.com/taylor-misch/bytepocket"
+          github: "https://github.com/taylor-misch/bytepocket",
+          alt: "Bytepocket - cryptocurrency wallet tracker"
         },
         {
           name: "SoundScript",
-          logo: "soundscript1.png",
+          logo: "soundscript.png",
           url: "https://taylor-misch.github.io/soundscript/",
-          github: "https://github.com/taylor-misch/soundscript"
+          github: "https://github.com/taylor-misch/soundscript",
+          alt: "SoundScript - a coding language for music"
         }
       ]
     };

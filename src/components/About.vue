@@ -40,11 +40,33 @@ export default {
       images: [
         {
           id: 1,
-          src: "cathedral_rock1.jpg"
+          src: "cathedral_rock.jpg",
+          alt: "Cathedral Rock"
         },
         {
           id: 2,
-          src: "eaa1.jpg"
+          src: "eaa.jpg",
+          alt: "Experimental Aircraft Association 2019"
+        },
+        {
+          id: 3,
+          src: "tough_mudder.jpg",
+          alt: "Tough Mudder Post-Race"
+        },
+        {
+          id: 4,
+          src: "flatiron.jpg",
+          alt: "Flatiron in the Arizona"
+        },
+        {
+          id: 5,
+          src: "sutherland.jpg",
+          alt: "Sutherland hall last day of junior year"
+        },
+        {
+          id: 6,
+          src: "taylors_falls.jpg",
+          alt: "Taylor's Falls with Rachel and Leah"
         }
       ]
     };
