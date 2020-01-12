@@ -37,8 +37,8 @@
             <v-layout mb-1 justify-center>
               <v-tooltip bottom color="black">
                 <template v-slot:activator="{ on }">
-                  <a :href="project.github">
-                    <v-icon x-large color="black" v-on="on" class="fab fa-github"></v-icon>
+                  <a :href="project.iconLink">
+                    <v-icon x-large color="black" v-on="on" :class="project.icon"></v-icon>
                   </a>
                 </template>
                 <span>{{project.label}}</span>
@@ -64,7 +64,8 @@ export default {
           name: "Bytepocket",
           logo: "bytepocket.jpg",
           url: "https://taylor-misch.github.io/bytepocket/",
-          github: "https://github.com/taylor-misch/bytepocket",
+          iconLink: "https://github.com/taylor-misch/bytepocket",
+          icon: "fab fa-github",
           alt: "Bytepocket - cryptocurrency wallet tracker",
           label: "Bytepocket's GitHub"
         },
@@ -72,7 +73,8 @@ export default {
           name: "SoundScript",
           logo: "soundscript.png",
           url: "https://soundscript.netlify.com/",
-          github: "https://github.com/taylor-misch/soundscript",
+          iconLink: "https://github.com/taylor-misch/soundscript",
+          icon: "fab fa-github",
           alt: "SoundScript - a coding language for music",
           label: "SoundScript's GitHub"
         },
@@ -80,9 +82,19 @@ export default {
           name: "Portfolio Website",
           logo: "portfolio.png",
           url: "https://taylormisch.com",
-          github: "https://github.com/taylor-misch/portfolio-website",
+          iconLink: "https://github.com/taylor-misch/portfolio-website",
+          icon: "fab fa-github",
           alt: "Where I show off and talk about myself",
           label: "Portfolio Website's GitHub"
+        },
+        {
+          name: "Bass Build Project",
+          logo: "bass.png",
+          url: "https://imgur.com/a/3g41wKj",
+          iconLink: "https://imgur.com/a/3g41wKj",
+          icon: "fas fa-info-circle",
+          alt: "Misch No. 1",
+          label: "Bass Build Imgur Album"
         }
       ]
     };
